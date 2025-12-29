@@ -5,21 +5,21 @@
 class Trix < Formula
   desc "Trix CLI - A universal memory layer for AI agents and humans"
   homepage "https://trixdb.com"
-  version "0.3.1"
+  version "0.3.2"
   license "Proprietary"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/trixdb/trix/releases/download/v0.3.1/trix_0.3.1_darwin_x86_64.tar.gz"
-      sha256 "45a81e840461dce341e00bdbf9932716450b1623dfb622e505a2c02794a49138"
+      url "https://github.com/trixdb/trix/releases/download/v0.3.2/trix_0.3.2_darwin_x86_64.tar.gz"
+      sha256 "83c4d8f6c69442fa11effbacb4ffbc420480f70b9b5419def46a0430b52a943d"
 
       def install
         bin.install "trix"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/trixdb/trix/releases/download/v0.3.1/trix_0.3.1_darwin_arm64.tar.gz"
-      sha256 "5be22cd64a8e0d42198be0c8ea21176302b888d2da97ad7888deea36e5262576"
+      url "https://github.com/trixdb/trix/releases/download/v0.3.2/trix_0.3.2_darwin_arm64.tar.gz"
+      sha256 "4766075683c5f0dfbb07b54ae79069872716b38cd5f8b1172de764a978082d82"
 
       def install
         bin.install "trix"
@@ -29,15 +29,15 @@ class Trix < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/trixdb/trix/releases/download/v0.3.1/trix_0.3.1_linux_x86_64.tar.gz"
-      sha256 "f32c9b403117cc76e9af403d487e7567bee21dad5bd70907bb0cb28630747f64"
+      url "https://github.com/trixdb/trix/releases/download/v0.3.2/trix_0.3.2_linux_x86_64.tar.gz"
+      sha256 "495a733bb3c13ac533b2c2101c69b063b2216b435ff27664b5a2ae571ee51f6f"
       def install
         bin.install "trix"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/trixdb/trix/releases/download/v0.3.1/trix_0.3.1_linux_arm64.tar.gz"
-      sha256 "7071bde0efec441e564f86b3a2629f2dfcd2af864e544575a58db5715766163f"
+      url "https://github.com/trixdb/trix/releases/download/v0.3.2/trix_0.3.2_linux_arm64.tar.gz"
+      sha256 "124ec9752f9e42508d4fd1a8eb0afb325238d886ac9136d0f42d7d653b6a0cf8"
       def install
         bin.install "trix"
       end
