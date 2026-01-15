@@ -11,7 +11,7 @@ class Trix < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/trixdb/trix/releases/download/v0.4.13/trix_0.4.13_darwin_x86_64.tar.gz"
-      sha256 "d81a9f23935487da2c5c9682c6902bffc1404c3b31abdb7b03046bc273a5744e"
+      sha256 "ecad37ce00c27a238d642e46fa96863548af480b5cc643b7e064ba3f4d67d11a"
 
       def install
         bin.install "trix"
@@ -19,7 +19,7 @@ class Trix < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/trixdb/trix/releases/download/v0.4.13/trix_0.4.13_darwin_arm64.tar.gz"
-      sha256 "c0207117bf60550a90c61f8be25b7ffbc7eae91b424ad2842778a913095e3855"
+      sha256 "3980895000143a1746f4718758f076f0b74c10a39933b1dda4ea8b70810f5ff9"
 
       def install
         bin.install "trix"
@@ -30,14 +30,14 @@ class Trix < Formula
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
       url "https://github.com/trixdb/trix/releases/download/v0.4.13/trix_0.4.13_linux_x86_64.tar.gz"
-      sha256 "de642baa674e437015c35e054d31127024a94833c5c815345fc8ba596f2506b7"
+      sha256 "58e362d3e0dc91784819334bcd25928dd40eed439690b050b32554c5fe1ca0fc"
       def install
         bin.install "trix"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/trixdb/trix/releases/download/v0.4.13/trix_0.4.13_linux_arm64.tar.gz"
-      sha256 "5e45225d73877b0782e89f0bd3d1cf26955fa4770e994413e6de1a50652c6f70"
+      sha256 "dfe989b95bed44b7554d87f2f4bb2366d7d390c997b12d46133a1cd5269c41d3"
       def install
         bin.install "trix"
       end
